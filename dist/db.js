@@ -1,0 +1,20 @@
+import { Pool } from 'pg';
+import dotenv from "dotenv";
+dotenv.config();
+export const pool = new Pool();
+export async function initDb() {
+    await pool.query(`
+    CREATE TABLE IF NOT EXISTS blood_pressure_readings 
+    (
+      id SERIAL PRIMARY KEY,
+      user_id BIGINT NOT NULL,
+      created_at TIMESTAMP NOT NULL,
+      l_systolic INTEGER,
+      l_diastolic INTEGER,
+      r_systolic INTEGER,
+      r_diastolic INTEGER
+    )
+  `);
+}
+initDb();
+//# sourceMappingURL=db.js.map
