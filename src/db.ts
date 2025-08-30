@@ -11,7 +11,7 @@ export async function initDb() {
     (
       id SERIAL PRIMARY KEY,
       user_id BIGINT NOT NULL,
-      created_at TIMESTAMP NOT NULL,
+      created_at TIMESTAMPTZ NOT NULL,
       l_systolic INTEGER,
       l_diastolic INTEGER,
       r_systolic INTEGER,
