@@ -3,6 +3,10 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "start": "bun run src/index",
+    "dev": "bun run --hot src/index"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/luxon": "^3.7.1",
