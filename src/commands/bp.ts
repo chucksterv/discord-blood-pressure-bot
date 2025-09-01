@@ -74,12 +74,12 @@ export default {
 
       } else {
         await interaction.editReply('⚠️ Error adding blood pressure values to database');
-        console.log("Data insertion failed.");
+        console.error("Data insertion failed.");
       }
 
     } catch (error) {
       await interaction.editReply('⚠️ Error adding blood pressure values to database');
-      console.log("Data insertion failed.");
+      console.error("Data insertion failed.");
       console.error(error);
 
     }
