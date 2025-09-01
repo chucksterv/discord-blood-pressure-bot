@@ -1,0 +1,19 @@
+{
+  "name": "discord-blood-pressure-bot",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/luxon": "^3.7.1",
+    "@types/pg": "^8.15.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "discord.js": "^14.22.1",
+    "luxon": "^3.7.1",
+    "pg": "^8.16.3"
+  }
+}
