@@ -61,7 +61,7 @@ export default {
 
       if (res.rowCount === 1) {
         // await interaction.editReply(`✅ Added blood pressure values ${side} -  (${systolic}/${diastolic}) to database!`);
-        await interaction.editReply(`✅ Testing auto deploy on server. Added blood pressure values ${side} -  (${systolic}/${diastolic}) to database!`);
+        await interaction.editReply(`✅ Added blood pressure values ${side} -  (${systolic}/${diastolic}) to database!`);
         console.log("Data insertion successful.");
         //Embed
         console.log("Attempting to calculate averages");
